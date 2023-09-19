@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Riya</title>
+<link href="style1.css" rel="stylesheet" type= "text/css" />
+<style>
+
+</style>
+</head>
+<body>
+<h1>Buena Comida</h1>
+<ul>
+  <li><a class="Index.html" href="index.html">Home</a></li>
+  <li><a href="menu.html">Menu</a></li>
+  <li><a href="about.html">About</a></li>
+
+  <li style="float:right"><a href="#about">Contact</a></li>
+</ul>
+
+</style>
+</head>
+<body>
+<center><img src="logophotoshop.psd" alt="CyberSafety6" width="184.32" height="122.94"> </p></center>
+
+<p>paragraph.</p>
+
+}
+<footer>PLEASE CALL US ON PH: 029 290 920 IF YOU NEED FURTHER TUTORIALS ON HTML OR CSS. EMAIL:IRIS.ATHENA@IRENA.COM</FOOTER>
+<script>
+var myIndex = 0;
+carousel();
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 1000); // Change image every second, change the number to 2000 if you want it to be every 2 seconds.
+}
+</script>
+</body>
+</html>
+
