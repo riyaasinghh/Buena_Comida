@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Buena Comida</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="style.css" rel="stylesheet" type= "text/css" />
+<style>
+
+</style>
+</head>
+<body>
+<h1></h1>
+<ul>
+  <li><a class="Index.html" href="index.html">Home</a></li>
+  <li><a href="menu.html">Menu</a></li>
+  <li><a href="about.html">About</a></li>
+
+  <li style="float:right"><a href="contact.html">Contact</a></li>
+</ul>
+
+</style>
+</head>
+<body>
+<center><img src="images/logo.png" alt="logo" width="950" height="486"> </p></center>
+
+<center><p>Who Are We?</p>
+<p2> We are an authentic Mexican restaurant specified for locals and tourists who are wanting to try the authentic Mexican cuisines we provide</p2>
+<br>
+<br>
+<p> What is Buena Comida?</p>
+<p2> Buena Comida is a Spanish word which in English translates to "Good Food" which is something we promise to provide to all our customers</p2>
+<br>
+<br>
+<p> Why visit us?</p>
+<p2> We are sure to provide all our customers with the best customer service they deserve, and the best authenitc Mexican cuisine found all throughout New Zealand</p2>
+<br>
+<br>
+<p>Where is the restaurant located?</p>
+<p2> We can be found in Auckland CBD along the Viaduct</p2></center>
+<br>
+<br>
+<center><img src="images/food.jfif" alt="logo" width="359" height="273"><img src="images/food3.jfif" alt="logo" width="359" height="273"><img src="images/food2.jfif" alt="logo" width="359" height="273"><img src="images/food4.jfif" alt="logo" width="359" height="273"> <img src="images/food5.jfif" alt="logo" width="359" height="273"></p></center>
+<br>
+<br>
+<br>
+
+<center><footer>Author:
+<br>
+Riya Singh</FOOTER></center>
+<script>
+var myIndex = 0;
+carousel();
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 1000); // Change image every second, change the number to 2000 if you want it to be every 2 seconds.
+}
+</script>
+</body>
+</html>
+

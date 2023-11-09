@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Buena Comida</title>
+<link href="style.css" rel="stylesheet" type= "text/css" />
+<!--above line is for the 'title of the page'-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--above line is for 'metadata'-->
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<!--above line is a 'link to w3schools.com ???'-->
+
+<style>
+.mySlides {display:none;}
+</style>
+</head>
+<body>
+
+<h1></h1>
+<ul>
+  <li><a class="Index.html" href="index.html">Home</a></li>
+  <li><a href="menu.html">Menu</a></li>
+  <li><a href="about.html">About</a></li>
+
+  <li style="float:right"><a href="contact.html">Contact</a></li>
+</ul>
+
+<center><img src="images/logo.png" alt="logo" width="950" height="486"> </p></center>
+<center>
+<p>Email us on: Buenacomida@gmail.com
+<br>
+<br>
+<br>
+Call us on : 021 021 102102</p>
+<br>
+<br>
+<p>
+Opening Hours:
+<br>
+Monday - Sunday 9am - 10pm</p></center>
+<br>
+<br>
+<center><p2> Here is what the interior of our restaurant looks like</p2></center>
+<div class="w3-content w3-section" style="max-width:500px">
+ <img class="mySlides" src="images/interior1.jpg" style="width:100%"> 
+ <img class="mySlides" src="images/interior2.jpg" style="width:100%"width="590" height="330">
+ <img class="mySlides" src="images/interior3.jpg" style="width:100%">
+</div>
+<script>
+var myIndex = 0;
+carousel();
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 1000); // Change image every second, change the number to 2000 if you want it to be every 2 seconds.
+}
+</script>
+<br>
+<br>
+<br>
+<br>
+<center><img src="images/food.jfif" alt="logo" width="359" height="273"><img src="images/food3.jfif" alt="logo" width="359" height="273"><img src="images/food2.jfif" alt="logo" width="359" height="273"><img src="images/food4.jfif" alt="logo" width="359" height="273"> <img src="images/food5.jfif" alt="logo" width="359" height="273"></p></center>
+<br>
+<br>
+<br>
+
+<center><footer>Author:
+<br>
+Riya Singh</FOOTER></center>
+</body>
+</html>
+
